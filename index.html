@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic-Tac-Toe Using Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#beb2c8] min-h-screen flex flex-col items-center justify-center">
+
+  <div class="msg-container hidden fixed inset-0 bg-[#beb2c8] flex flex-col items-center justify-center gap-6 z-50">
+    <h1 id="msg" class="text-[#7D8491] text-5xl sm:text-6xl font-bold">Winner is X</h1>
+    <button id="new-btn" class="bg-[#EAF0CE] text-[#7D8491] px-6 py-3 rounded-xl text-lg font-semibold">New Game</button>
+  </div>
+
+  <h1 class="text-6xl font-bold text-[#7D8491] mb-10">Tic Tac Toe</h1>
+
+  <div class="grid grid-cols-3 gap-4 w-[60vmin]">
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+    <button class="box bg-white text-5xl font-bold rounded-2xl h-[18vmin] shadow"></button>
+  </div>
+
+  <button id="reset-btn" class="mt-10 bg-[#EAF0CE] text-[#7D8491] px-6 py-3 rounded-xl text-lg font-semibold">Reset Game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
